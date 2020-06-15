@@ -21,15 +21,14 @@ mongoose
     console.log("DB connection successful");
   });
 
-// let _id = mongoose.Types.ObjectId();
-// contract = new Contract({
-//   _id: _id,
-//   Name: "Contract 1",
-// });
+let _id = mongoose.Types.ObjectId();
+contract = new Contract({
+  _id: _id,
+  Name: "Contract 1",
+});
 
 //comment out this initial operation to prevent duplicate contracts being created
 contract.save().catch((err) => {
-  done();
   console.log(err);
 });
 

@@ -7,7 +7,7 @@ const Contract = require("../Models/Contract");
 const mongoose = require("mongoose");
 const csvtodb = require("../functions/trackcsvtodb");
 
-describe.only("TEST GROUP: READING CSVS", function () {
+describe("TEST GROUP: READING CSVS", function () {
   let contract;
   beforeEach((done) => {
     let _id = mongoose.Types.ObjectId();
