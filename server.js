@@ -28,9 +28,9 @@ mongoose
 // });
 
 //comment out this initial operation to prevent duplicate contracts being created
-// contract.save().catch((err) => {
-//   done();
-//   console.log(err);
-// });
+contract.save().catch((err) => {
+  done();
+  console.log(err);
+});
 
 csvtodb(csvpath);
