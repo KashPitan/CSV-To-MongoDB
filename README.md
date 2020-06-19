@@ -1,3 +1,5 @@
+Reading CSV files into mongodb
+
 clone and use: "npm install"
 
 Note: all records will be saved to a local database (see connection strings in server.js and connection.js)
